@@ -1,0 +1,8 @@
+theme = "new_moon"
+
+[editor]
+line-number = "absolute"
+auto-format = true
+
+[editor.lsp]
+display-messages = true

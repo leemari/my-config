@@ -1,0 +1,16 @@
+[language-server.fortls]
+command = "fortls"
+args = ["--symbol_skip_mem", "--incremental_sync", "--autocomplete_no_prefix", "--lowercase_intrinsics", "--hover_signature", "--use_signature_help"]
+config = { provideFormatter = true }
+
+[[language]]
+name = "fortran"
+auto-format = true
+formatter = { command = "fprettify", args = ["--silent"]}
+# language-servers = ["fortls"]
+language-servers = [ { name = "fortls" } ]
+
+[[language]]
+name = "cpp"
+auto-format = true
+formatter = { command = "clang-format" }
