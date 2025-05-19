@@ -14,3 +14,13 @@ language-servers = [ { name = "fortls" } ]
 name = "cpp"
 auto-format = true
 formatter = { command = "clang-format" }
+
+[[language]]
+name = "c"
+auto-format = true
+formatter = { command = "clang-format" }
+
+[[language]]
+name = "rust"
+auto-format = true
+formatter = { command = "cargo", args = ["fmt"] }
