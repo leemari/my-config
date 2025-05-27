@@ -6,3 +6,6 @@ auto-format = true
 
 [editor.lsp]
 display-messages = true
+
+[editor.file-picker]
+ignore = true
