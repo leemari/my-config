@@ -1,3 +1,18 @@
+# Python
+
+```bash
+pip install python-lsp-server[all]
+pip install black
+pip install isort
+pip install jedi
+pip install pyflakes
+pip install pylint
+pip install pyls-isort
+pip install python-lsp-black
+pip install python-lsp-server[rope,pylint]
+pip install rope
+```
+
 # Fortran
 
 ## On Mac
