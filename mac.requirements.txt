@@ -1,11 +1,12 @@
+# Note. install these using brew instead of pip on MAC ... the commented out ones wouldn't install
 # python
 python-lsp-server[all]
 black
 isort
-jedi
-pyflakes
+#jedi
+#pyflakes
 pylint
-pyls-isort
-python-lsp-black
+#pyls-isort
+#python-lsp-black
 python-lsp-server[rope,pylint]
-rope
+#rope
