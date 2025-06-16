@@ -8,3 +8,6 @@ sudo apt install clang
 sudo apt-get install clangd
 sudo apt install clang-format
 
+# BASH
+sudo snap install shfmt
+sudo snap install bash-language-server --classic

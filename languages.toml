@@ -1,3 +1,7 @@
+[language-server.docker-language-server]
+command = "docker-language-server"
+args = []
+
 [language-server.fortls]
 command = "fortls"
 args = ["--symbol_skip_mem", "--incremental_sync", "--autocomplete_no_prefix", "--lowercase_intrinsics", "--hover_signature", "--use_signature_help"]
@@ -26,6 +30,11 @@ auto-format = true
 formatter = { command = "rustfmt" }
 
 [[language]]
+name = "swift"
+auto-format = true
+formatter = { command = "swift-format" }
+
+[[language]]
 name = "python"
 auto-format = true
 formatter = { command = "black"}
@@ -39,3 +48,9 @@ plugins.pyls_mypy.enabled = true
 plugins.pyls_mypy.live_mode = false
 plugins.isort.enabled = true
 plugins.rope_autoimport.enabled = true
+
+[[language]]
+name = "bash"
+auto-format = true
+formatter = { command = "shfmt", args = ["-i", "4"] }
+language-servers = [ { name = "docker-language-server" } ]

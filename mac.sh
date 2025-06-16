@@ -27,3 +27,7 @@ zig build -Doptimize=ReleaseSafe
 
 # Add below to your path
 ~/myapps/zls/zig-out/bin
+
+# BASH
+brew install shfmt
+brew install bash-language-server
