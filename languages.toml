@@ -7,6 +7,13 @@ command = "fortls"
 args = ["--symbol_skip_mem", "--incremental_sync", "--autocomplete_no_prefix", "--lowercase_intrinsics", "--hover_signature", "--use_signature_help"]
 config = { provideFormatter = true }
 
+[language-server.golangci-lint-lsp]
+command = "golangci-lint-langserver"
+
+[language-server.golangci-lint-lsp.config]
+command = ["golangci-lint", "run", "--output.json.path=stdout", "--show-stats=false", "--issues-exit-code=1"]
+
+
 [[language]]
 name = "fortran"
 auto-format = true
@@ -18,6 +25,11 @@ language-servers = [ { name = "fortls" } ]
 name = "cpp"
 auto-format = true
 formatter = { command = "clang-format" }
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "gofmt" }
 
 [[language]]
 name = "c"
