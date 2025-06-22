@@ -78,3 +78,25 @@ brew install clang-format
 
 ## Windows
 Install Visual Studio Community 2022 with the C/C++ pack; that should provide `clang`.
+
+# Go
+
+## On Ubuntu (WSL)
+
+```bash
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install github.com/nametake/golangci-lint-langserver@latest
+# install golangc-lint as follows
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin v2.1.6
+```
+
+## MAC
+Same as for Ubuntu, except that golangc-lint is installed using brew
+
+```bash
+brew install golangc-lint
+```
+
+## Windows
+Every thing likely there if you have the Go extension installed for VS Code.
